@@ -1,0 +1,56 @@
+:root {
+    --slate-50: #f8fafc;
+    --rose-300: #fda4af;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+}
+
+html {
+   @media(max-width: 1080px) {
+        font-size: 93.75%; //15px
+   } 
+
+   @media(max-width: 768px) {
+        font-size: 87.5%; //14px
+   }
+
+   @media(max-width: 480px) {
+        font-size: 81.3%; //13px
+   }
+}
+
+:focus {
+    outline: 0;
+    box-shadow: 0 0 0 2px var(--rose-300);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, button {
+    font-weight: bold;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    background-color: var(--slate-50);
+}
+
+body, input, textarea {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    -webkit-font-smoothing: antialiased;
+}
