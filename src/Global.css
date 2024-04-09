@@ -1,5 +1,6 @@
 :root {
     --slate-50: #f8fafc;
+    --slate-200: #e2e8f0;
     --rose-300: #fda4af;
 }
 
@@ -28,6 +29,7 @@ html {
 
 :focus {
     outline: 0;
+    border-radius: 4px;
     box-shadow: 0 0 0 2px var(--rose-300);
 }
 
@@ -41,6 +43,7 @@ h1, h2, h3, h4, h5, h6, button {
 }
 
 button {
+    background-color: transparent;
     cursor: pointer;
 }
 

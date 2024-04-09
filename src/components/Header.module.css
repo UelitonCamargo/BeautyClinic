@@ -1,0 +1,22 @@
+.containerHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 1.5rem;
+    background-color: var(--slate-200);
+    height: 4.5rem;
+}
+
+.colorClinic {
+    color: var(--rose-300);
+}
+
+.buttonMenuMobile {
+    line-height: 0px;
+}
+
+.buttonMenuMobile svg {
+    width: 1.4rem;
+    height: 1.4rem;
+    color: var(--rose-300);
+}   
