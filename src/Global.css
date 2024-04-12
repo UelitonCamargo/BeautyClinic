@@ -1,7 +1,10 @@
 :root {
     --slate-50: #f8fafc;
     --slate-200: #e2e8f0;
+    --slate-950: #020617;
+
     --rose-300: #fda4af;
+    --rose-400: #fb7185;
 }
 
 * {
@@ -56,4 +59,23 @@ body, input, textarea {
     font-weight: 400;
     font-size: 1rem;
     -webkit-font-smoothing: antialiased;
+}
+
+.react-modal-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;  
+}
+
+.react-modal-content {
+    position: relative;
+    background-color: var(--slate-50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    min-height: 100%;
 }

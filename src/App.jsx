@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Header } from "./components/Header";
 
 import Modal from 'react-modal'
+import { NewModalMenu } from "./components/NewModalMenu";
 
 Modal.setAppElement('#root') //Acessibilidade
 
@@ -19,13 +20,11 @@ export function App() {
   return (
     <>
       <Header onOpenNewMenu={ handleOpenNewMenu }/>
-
-      <Modal 
+      <NewModalMenu 
         isOpen={ isNewMenuModalOpen }
         onRequestClose={ handleCloseNewMenu }
-      >
-               <h1>oiii</h1> 
-      </Modal>
+      />
+      
     </>
   )
 }
