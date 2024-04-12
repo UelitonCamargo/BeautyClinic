@@ -11,6 +11,10 @@
     color: var(--rose-300);
 }
 
+.menuDesktop {
+    display: none;
+}
+
 .buttonMenuMobile {
     line-height: 0px;
 }
@@ -19,4 +23,33 @@
     width: 1.4rem;
     height: 1.4rem;
     color: var(--rose-300);
-}   
+}
+
+@media(min-width: 600px) {
+    .buttonMenuMobile {
+        display: none;
+    }
+
+    .menuDesktop,
+    .menuDesktop ul {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .menuDesktop ul li a {
+        color: #475569;
+        transition: all 0.05s;
+    }
+
+    .menuDesktop ul li a:hover {
+        color: var(--rose-400);
+        padding-bottom: 1.5rem;
+        border-bottom: 2px solid var(--rose-400);
+    }
+}
+
+@media(min-width: 1150px) {
+    .containerHeader {
+        padding: 0px 7.68rem;
+    }
+}
