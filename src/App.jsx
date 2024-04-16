@@ -3,6 +3,7 @@ import { Header } from "./components/Header";
 
 import Modal from 'react-modal'
 import { NewModalMenu } from "./components/NewModalMenu";
+import { ScheduleAnAppointment } from "./components/ScheduleAnAppointment";
 
 Modal.setAppElement('#root') //Acessibilidade
 
@@ -24,7 +25,7 @@ export function App() {
         isOpen={ isNewMenuModalOpen }
         onRequestClose={ handleCloseNewMenu }
       />
-      
+      <ScheduleAnAppointment />
     </>
   )
 }

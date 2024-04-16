@@ -1,0 +1,20 @@
+.schedule {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 2rem 1rem 2.5rem;
+}
+
+.image {
+    height: 16.56rem;
+}
+
+.sloganImage {
+    max-width: 20rem;
+    height: 14rem;
+}
+
+.fundoImage {
+    max-width: 20rem;
+    height: 15rem;
+    background-color: var(--rose-300);
+}
